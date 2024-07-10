@@ -1,0 +1,35 @@
+{
+  "name": "@the-software-compagny/flower-inbox-sdk",
+  "version": "0.0.14",
+  "description": "SDK package for Flower-Inbox",
+  "author": "tacxou <12997062+tacxou@users.noreply.github.com>",
+  "contributors": [
+    {
+      "name": " tacxou",
+      "email": "12997062+tacxou@users.noreply.github.com",
+      "url": "https://github.com/tacxou"
+    },
+    {
+      "name": "Contributors",
+      "url": "https://github.com/The-Software-Compagny/flower-inbox/graphs/contributors"
+    }
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist && npm run generate",
+    "build": "tsc --build tsconfig.json",
+    "postbuild": "cpr README.md dist/README.md && cpr LICENSE dist/LICENSE && cpr package.json dist/package.json",
+    "generate": "openapi-typescript ./assets/swagger.json -o ./src/flower-inbox-api.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "cpr": "^3.0.1",
+    "openapi-typescript": "^6.7.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
