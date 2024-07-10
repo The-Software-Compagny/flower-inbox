@@ -17,7 +17,7 @@ Flower Inbox est un projet open source polyvalent conçu pour simplifier les pro
 ## Getting started
 
 ```bash
-docker pull thesoftwarecompagny/flower-inbox
+docker pull ghcr.io/the-software-compagny/flower-inbox:latest
 ```
 
 ```env
