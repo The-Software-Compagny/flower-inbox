@@ -1,6 +1,6 @@
 {
   "name": "@the-software-compagny/flower-inbox",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An email retrieval system with a REST API built with NestJS in NodeJS",
   "repository": "https://github.com/The-Software-Compagny/flower-inbox.git",
   "author": "tacxou <12997062+tacxou@users.noreply.github.com>",
